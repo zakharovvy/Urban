@@ -19,7 +19,7 @@ def result(n: int) -> str:
 
 
 def div(a: int) -> list[int]:
-    dividers = []                      #Функция которая находит делители определенного числа
+    dividers = []                      #Функция, которая находит делители определенного числа
     for i in range(2, a):              #Потом она добавляет их в список dividers. Это нужно для функции result
         if a % i == 0:
             dividers.append(i)
