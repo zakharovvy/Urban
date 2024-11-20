@@ -22,7 +22,7 @@ class Shop:
         for product in products:
             file.seek(0)
             if product.name in old_products:
-                print(f'Продукт {product.name} уже есть в магазине')
+                print(f'Продукт {product} уже есть в магазине')
             else:
                 file.write(f'{product}\n')
         file.close()
