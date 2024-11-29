@@ -1,11 +1,11 @@
+#По просьбам трудящихся я добавил декоратор  @staticmethod и валидацию 
 class Car:
     def __init__(self, model:str, vin:int, numbers:str):
         self.model = model
-        self.__vin = vin
-        Car.__is_valid_vin(self.__vin)
-        self.__numbers = numbers
-        Car.__is_valid_numbers (self.__numbers)
+        self.__vin = self.__is_valid_vin(vin)
+        self.__numbers = self.__is_valid_numbers(numbers)
 
+    @staticmethod
     def __is_valid_vin(vin_number):
         if not isinstance(vin_number, int):
             raise IncorrectVinNumber ('Некорректный тип vin номер')
@@ -14,6 +14,7 @@ class Car:
         else:
             return True
 
+    @staticmethod
     def __is_valid_numbers(numbers):
         if not isinstance(numbers,str):
             raise IncorrectCarNumbers('Некорректный тип данных для номеров')
