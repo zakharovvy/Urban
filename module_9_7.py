@@ -18,6 +18,7 @@ def is_prime(func):
 def sum_three(a:int,b:int,c:int):
     return a+b+c
 
+#Порядок выдачи ответов такой же как в образце: сначала число, потом характеристика
 result = sum_three(2, 3, 6)
 print(result)
 
@@ -26,4 +27,7 @@ print(result2)
 
 result3 = sum_three(0, 0, 0)
 print(result3)
+
+result4 = sum_three(5, 10, 1)
+print(result4)
 
