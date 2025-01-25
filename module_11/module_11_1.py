@@ -73,8 +73,8 @@ arr7 = np.concatenate((arr3, arr5), axis=1)
 #Pandas
 #для выполнения задания мне потребуются дополнительные файлы:
 #CSV1 и CSV2 - оба будут загружены на Github
-distance_from_Moscow = pd.read_csv('Расстояние от Москвы.csv', sep=';',encoding='utf-8')
-distance_from_SPB = pd.read_csv('Расстояние от Питера.csv', sep=';',encoding='utf-8')
+distance_from_Moscow = pd.read_csv('Расстояние от Москвы.csv', sep=';', encoding='utf-8')
+distance_from_SPB = pd.read_csv('Расстояние от Питера.csv', sep=';', encoding='utf-8')
 
 #Проводим анализ какие города ближе к Москве, чем к Санкт-Петербургу
 #Если в результате True - значит ближе к Москве, если False - ближе к СПб
