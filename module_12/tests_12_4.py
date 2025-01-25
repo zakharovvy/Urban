@@ -4,7 +4,7 @@ import logging
 
 
 format_logs = '%(levelname)s - %(message)s'
-logging.basicConfig(level=20, filemode='w', filename='runner_tests.log', encoding='UTF-8', format=format_logs)
+logging.basicConfig(level=20, filemode='w', filename='../runner_tests.log', encoding='UTF-8', format=format_logs)
 
 class Runner:
     def __init__(self, name, speed=5):
